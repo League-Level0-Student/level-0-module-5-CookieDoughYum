@@ -1,4 +1,7 @@
 package algorithms;
+
+import javax.swing.JOptionPane;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 0
@@ -26,7 +29,16 @@ public class GuessingPi {
 		// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 		// NOTE: The number of digits in your string will be
 		// yourStringVariable.length()
-
+for(int i=0; i< Pi.length(); i++) {
+	String next=JOptionPane.showInputDialog("What is the next digit of Pi");
+	if(next.charAt(0)==Pi.charAt(i)) {
+		JOptionPane.showMessageDialog(null, "Correct");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "Incorrect. Please start over");
+		break;
+	}
+}
 		// 5. Ask the user for the NEXT digit of pi.
 
 		// 6. Compare the user's input to the next digit of your pi variable
