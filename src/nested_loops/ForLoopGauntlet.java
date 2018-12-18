@@ -44,16 +44,23 @@ public static void main(String[] args) {
 		System.out.println(" In " + i + " I was " +  (i-2007)  + " Years Old ");
 	}
 	//Nested For-Loops
-		for(int i=0; i<3; i++) {
-			for(int i2=0; i2<3; i2++) {
-			System.out.println(i);
-			}
+	for(int i=0; i<3; i++) {
+		for(int i2=0; i2<3; i2++) {
+			System.out.println(i+" "+i2);
 		}
-		for(int i=0; i<3; i++) {
-			for(int i2=0; i2<3; i2++) {
-				System.out.println(i2);
-			}
+	}
+	for(int i=0; i<=6; i+=3) {
+		for(int j=1; j<4; j++) {
+			System.out.print(j+i+" ");
 		}
+		System.out.println();
+	}
 	
+	//work on this
+	for(int i=0; i<6; i++) {
+		for(int b=0; b<1; b+=1) {
+			System.out.println("*");
+		}
+	}
 }
 }
